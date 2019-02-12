@@ -8,6 +8,7 @@ const Wrapper = styled.div`
     padding: 10px;
     display: flex;
     flex-direction: column;
+    background-color: ${props => props.theme.colors.red}
 `;
 
 const Image = styled.img`
