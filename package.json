@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:home": "npm start --prefix ./packages/monorepo_demo-home-ui",
+    "start:catalog": "npm start --prefix ./packages/monorepo_demo-catalog-ui",
+    "start": "lerna run --parallel start",
+    "build": "lerna run build"
   },
   "author": "",
   "license": "ISC",
